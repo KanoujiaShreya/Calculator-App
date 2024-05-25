@@ -77,24 +77,28 @@ namespace WinForms_App
         {
             option = "+";
             firstNumber = int.Parse(CalcDisplay.Text);
+            CalcDisplay.Clear();
         }
 
         private void SubButton_Click(object sender, EventArgs e)
         {
             option = "-";
             firstNumber = int.Parse(CalcDisplay.Text);
+            CalcDisplay.Clear();
         }
 
         private void MulButton_Click(object sender, EventArgs e)
         {
             option = "*";
             firstNumber = int.Parse(CalcDisplay.Text);
+            CalcDisplay.Clear();
         }
 
         private void DivButton_Click(object sender, EventArgs e)
         {
             option = "/";
             firstNumber = int.Parse(CalcDisplay.Text);
+            CalcDisplay.Clear();
         }
 
         private void EqualButton_Click(object sender, EventArgs e)
@@ -110,6 +114,15 @@ namespace WinForms_App
                 result = firstNumber / secondNumber;
 
             CalcDisplay.Text = result + "";
+           // CalcDisplay.Clear();
+        }
+
+        private void ClearButton_Click(object sender, EventArgs e)
+        {
+            CalcDisplay.Clear();//\reusbbhh
+            result = (0);
+            firstNumber = (0);
+            secondNumber = (0);
         }
     }
 }

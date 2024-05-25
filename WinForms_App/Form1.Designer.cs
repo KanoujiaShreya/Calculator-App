@@ -50,6 +50,7 @@ namespace WinForms_App
             // 
             // CalcDisplay
             // 
+            this.CalcDisplay.BackColor = System.Drawing.Color.Beige;
             this.CalcDisplay.Font = new System.Drawing.Font("Segoe UI", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.CalcDisplay.Location = new System.Drawing.Point(24, 38);
             this.CalcDisplay.Multiline = true;
@@ -59,13 +60,14 @@ namespace WinForms_App
             // 
             // button1
             // 
+            this.button1.BackColor = System.Drawing.Color.Beige;
             this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.button1.Location = new System.Drawing.Point(42, 150);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(79, 62);
             this.button1.TabIndex = 1;
             this.button1.Text = "1";
-            this.button1.UseVisualStyleBackColor = true;
+            this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // button2
@@ -213,30 +215,35 @@ namespace WinForms_App
             // 
             // ClearButton
             // 
+            this.ClearButton.BackColor = System.Drawing.Color.Beige;
             this.ClearButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.ClearButton.Location = new System.Drawing.Point(433, 304);
             this.ClearButton.Name = "ClearButton";
             this.ClearButton.Size = new System.Drawing.Size(102, 62);
             this.ClearButton.TabIndex = 11;
             this.ClearButton.Text = "Clear";
-            this.ClearButton.UseVisualStyleBackColor = true;
+            this.ClearButton.UseVisualStyleBackColor = false;
+            this.ClearButton.Click += new System.EventHandler(this.ClearButton_Click);
             // 
             // EqualButton
             // 
+            this.EqualButton.BackColor = System.Drawing.Color.Beige;
             this.EqualButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 14F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.EqualButton.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.EqualButton.Location = new System.Drawing.Point(42, 385);
             this.EqualButton.Name = "EqualButton";
             this.EqualButton.Size = new System.Drawing.Size(493, 62);
             this.EqualButton.TabIndex = 16;
             this.EqualButton.Text = "=";
-            this.EqualButton.UseVisualStyleBackColor = true;
+            this.EqualButton.UseVisualStyleBackColor = false;
             this.EqualButton.Click += new System.EventHandler(this.EqualButton_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(569, 473);
+            this.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.ClientSize = new System.Drawing.Size(594, 473);
             this.Controls.Add(this.EqualButton);
             this.Controls.Add(this.DivButton);
             this.Controls.Add(this.AddButton);
